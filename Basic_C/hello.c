@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main(){
-    //find the datatypes size 
-    int a;
-    float b;
-    double c;
-    char d;
-    void *e;
-    printf("size of int :%d bytes\n",sizeof(a));
-    printf("size of float :%f bytes\n",sizeof(b));
-
-    printf("size of double :%ld bytes\n",sizeof(c));
-    printf("size of char :%c bytes\n",sizeof(d));
+    //to check a person is eligible for vote or not 
+    int age;
+    printf("enter the your age:");
+    scanf("%d",&age);
+    if(age>=18){
+        printf("you are eligible for the vote");
+    }
+    else{
+        printf("not eligible for votes");
+    }
     return 0;
     
 }
