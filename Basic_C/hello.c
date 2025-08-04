@@ -1,15 +1,12 @@
+// positons of array[0]:%d\n",array memory stores in locations 
 #include<stdio.h>
-int main(){
-    //to check a person is eligible for vote or not 
-    int age;
-    printf("enter the your age:");
-    scanf("%d",&age);
-    if(age>=18){
-        printf("you are eligible for the vote");
-    }
-    else{
-        printf("not eligible for votes");
-    }
+int main (){
+int array[]={12,32,22,12,32};
+    printf("the positions  of array[0]:%d\n",array[0]);
+    printf("the positions of array[1]:%d\n",array[1]);
+    printf("the positions of array[2]:%d\n",array[2]);
+    printf("the positions of array[3]:%d\n",array[3]);
+    printf("the positions of array[4]:%d\n",array[4]);
+
     return 0;
-    
 }
