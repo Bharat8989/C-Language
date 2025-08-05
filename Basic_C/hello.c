@@ -1,12 +1,24 @@
-// positons of array[0]:%d\n",array memory stores in locations 
 #include<stdio.h>
-int main (){
-int array[]={12,32,22,12,32};
-    printf("the positions  of array[0]:%d\n",array[0]);
-    printf("the positions of array[1]:%d\n",array[1]);
-    printf("the positions of array[2]:%d\n",array[2]);
-    printf("the positions of array[3]:%d\n",array[3]);
-    printf("the positions of array[4]:%d\n",array[4]);
 
+void even(int n);
+void odd(int n);
+
+void even(int n) {
+    if(n %2 == 0) {
+        printf("%d \n", n);
+        odd(n-1);  // Calls odd()
+    }
+}
+
+void odd(int n) {
+    if(n % 2== 0) {
+        printf("%d ", n);
+        even(n-1); // Calls even()
+    }
+}
+
+int main() {
+    even(6);  // Start with an odd number
+    //  odd(5);
     return 0;
 }
