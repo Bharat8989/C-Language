@@ -1,19 +1,16 @@
-//1D array
+//sum of two array
 #include<stdio.h>
 int main(){
-    int array[5];
+    int array1[]={12,12};
+    int array2[]={23,21};
+    int sum[2];
     int i;
-    int sum=0;
-    printf("enter the element :");
-    for( i=0;i<5;i++){
-        scanf("%d",&array[i]);
-        sum=sum+array[i];
-
+    for(i=0;i<2;i++){
+        sum[i]=array1[i]+array2[i];
     }
-    printf("the element are:");
-    for(i=0;i<5;i++){
-        printf("%d ",array[i]);
+    printf("the additions of array:");
+    for(i=0;i<2;i++){
+        printf("%d ",sum[i]);
     }
-    printf("\nthe sum all elements:%d",sum);
     return 0;
 }
