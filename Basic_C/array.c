@@ -1,21 +1,19 @@
-//2 D array
-#include <stdio.h>
+//1D array
+#include<stdio.h>
 int main(){
-    int a[2][2];
-    int i,j;
-    printf("enter array elements:");
-    for(i=0;i<2;i++){
-        for(j=0;j<2;j++){
-            scanf("%d",&a[i][j]);
-        }
-    }
-    printf("matrix element:");
-    for(i=0;i<2;i++){
-        for(j=0;j<2;j++){
-            printf("%d ",a[i][j]);
-        }
-        printf("\n");
-    }
-    return 0;
+    int array[5];
+    int i;
+    int sum=0;
+    printf("enter the element :");
+    for( i=0;i<5;i++){
+        scanf("%d",&array[i]);
+        sum=sum+array[i];
 
+    }
+    printf("the element are:");
+    for(i=0;i<5;i++){
+        printf("%d ",array[i]);
+    }
+    printf("\nthe sum all elements:%d",sum);
+    return 0;
 }
